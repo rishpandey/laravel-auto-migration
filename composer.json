@@ -1,0 +1,29 @@
+{
+    "name": "rishpandey/laravel-auto-migration",
+    "description": "The package uses Doctrine DBAL in order to diff the existing tables with given model and make the necessary changes to it. If the table does not exist, it will create it.",
+    "homepage": "https://github.com/rishpandey/laravel-auto-migration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rishabh Pandey",
+            "email": "rishpandey@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^2.10",
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RishPandey\\LaravelAutoMigration\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RishPandey\\LaravelAutoMigration\\Providers\\AutoMigrationServiceProvider"
+            ]
+        }
+    }
+}
